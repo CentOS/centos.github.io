@@ -1,5 +1,9 @@
 ---
 nav_order: 1
+title: centos/centos-bootc
+description: centos-bootc documentation
+baseurl: "/centos-bootc"
+
 ---
 
 # Goals
