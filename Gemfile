@@ -1,14 +1,13 @@
-# Bundler setup for jekyll to be deployed on github pages.
-
 source "https://rubygems.org"
 
-# Note that we're using the github-pages gem to mimic the GitHub pages
-# automated setup. That installs jekyll, a default set of jekyll
-# plugins, and a modified jekyll configuration.
+gem 'jekyll', "= 3.9.3"
+gem 'webrick', "= 1.8.1"
+gem 'addressable', "=2.8.6"
+gem 'racc', "=1.7.3"
+gem 'base64', "=0.2.0"
+gem 'bigdecimal', "=3.1.4"
+gem 'drb', "=2.2.0"
+gem 'mutex_m', "=0.2.0"
 group :jekyll_plugins do
-  gem "github-pages"
-  gem "jekyll-remote-theme"
+  gem "github-pages", "= 228"
 end
-
-# Prefer the GitHub flavored markdown version of kramdown.
-gem "kramdown-parser-gfm"
